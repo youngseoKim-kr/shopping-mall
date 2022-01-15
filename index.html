@@ -10,30 +10,26 @@
   <body>
 
       <img src="./img/logo.png" class="logo" alt="logo">
-
+      <!-- data value 와 data key를 이용해서 queryselect로 button 전체를 가져오고 하나씩 분류 하는 방법 -->
       <section class="buttons">
       <button class="btn">
-        <img src="./img/blue_t.png" alt="blue_t" class="imgBtn" />
+        <img src="./img/blue_t.png" alt="blue_t" class="imgBtn" data-key="type" data-value="tshirt" />
       </button>
       <button class="btn">
         <img src="./img/blue_p.png" alt="blue_p"
-        class="imgBtn" />
+        class="imgBtn" data-key="type" data-value="pants" />
       </button>
       <button class="btn">
         <img src="./img/blue_s.png" alt="blue_s"
-        class="imgBtn" />
+        class="imgBtn"  data-key="type" data-value="skirt" />
       </button>
-      <button class="btn colorBtn blue">Blue</button>
-      <button class="btn colorBtn yellow">Yellow</button>
-      <button class="btn colorBtn pink">Pink</button>
+      <button class="btn colorBtn blue" data-key="color" data-value="blue" >Blue</button>
+      <button class="btn colorBtn yellow" data-key="color" data-value="yellow" >Yellow</button>
+      <button class="btn colorBtn pink" data-key="color" data-value="pink" >Pink</button>
 
     </section>
 
     <ul class="items">
-      <li class="item">
-        <img src="./img/blue_t.png" alt="tshirt" class="item__thumbnail" />
-        <span class=="item__description">male, large</span>
-      </li>
     </ul>
 
   </body>
